@@ -1,0 +1,7 @@
+site_name: Curso de IA generativa
+nav:
+  - Home: index.md
+  - modulo1: sobre_ia.md
+theme: 
+  name: dracula
+
