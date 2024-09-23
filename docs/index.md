@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# Bem-vindo ao curso de IA generativa do projeto Nooh
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Nosso primeiro projeto de um curso totalmente documentado sobre inteligência artificial generativa. Fizemos este curso com muita dedicação e carinho, visando democratizar o acesso a este tipo de conhecimento.
 
-## Commands
+## Ao final do curso você irá:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- Entender o que é e como funciona uma IA generativa
+- Entender como levar a máquina a lhe fornecer a resposta que você precisa
+- Saber como e quais parâmetros influenciam na resposta desse tipo de IA
+- Estará apto a fazer as seguintes fazer o teste para as seguintes certificações:
+    - Oracle Cloud Infrastructure 2024 Generative AI Professional Exam Number: 1Z0-1127-24
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## O curso está divido nos seguintes módulos
+1- O que preciso entender sobre IAs generativas
+2- Usando engenharia de prompt para melhorar as respostas da IA 
