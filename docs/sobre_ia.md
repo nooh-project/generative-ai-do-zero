@@ -14,7 +14,7 @@
 - Criam novos conteúdos a partir dos dados em que foram treinadas.
 - A rotina de uso de uma IA desse tipo costuma ser da seguinte forma:
 
-![fluxo_de_gen_ia]("mages/Pasted image 20240919201310.png)
+![fluxo_de_gen_ia](Images/Pasted image 20240919201310.png)
 
 - Ambos os tipos de IA são desenvolvidas usando deep learning e redes neurais.
 
