@@ -1,0 +1,3 @@
+- Embeddings são representações numéricas de um trecho de texto, convertido em uma sequência de números. Tal texto pode ser uma palavra, frase, sentença, parágrafo ou mais de um parágrafo. Isso facilita para o computador entender as relações entres os trechos de texto.
+- Embeddings de palavras também são capazes de capturar propriedades delas, e com os métodos certos computar a similaridade numérica dessas palavras. Embeddings que são numericamente similares também o são semanticamente.
+- Quando se faz embeddings de sentenças, cada uma é associada com um vetor de números, de forma que sentenças similares possuem vetores similares, e sentenças diferentes tem vetores diferentes.
