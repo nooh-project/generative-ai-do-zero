@@ -1,0 +1,5 @@
+Decoding é o processo de gerar texto via LLM. É um processo iterativo, que gera uma palavra por vez. A cada palavra gerada, o texto é submetido ao modelo para que ele continue gerando a sequência até que ele seja encerrado. Existem algumas formas de decoding:
+
+- Greedy Decoding: Escolher a palavra com maior probabilidade a cada passo;
+- Non-Deterministic Decoding: Escolher randomicamente as palavras com maiores probabilidades em cada passo.
+- Temperature: Um (hiper) parâmetro que modula a distribuição das probabilidades do vocabulário do modelo. Quando a temperatura diminui, a distribuição de probabilidades se concentram nas palavras que normalmente já são mais prováveis, contudo se ela aumenta as palavras ficam com probabilidades com valores mais próximos umas das outras. Observação: Esse parâmetro afeta as probabilidade já existentes, logo palavras mais prováveis de serem escolhidas tendem a ainda se comportarem dessa forma, assim como com as palavras menos prováveis.

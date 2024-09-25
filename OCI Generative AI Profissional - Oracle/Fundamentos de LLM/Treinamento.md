@@ -1,0 +1,2 @@
+O treinamento é outro modo de se influenciar nas probabilidades do vocabulário de um modelo. Ele costuma ser usado quando: existem dados para treinamento e a adaptação de domínio é necessária (adaptar um modelo, costumeiramente via treinamento, para melhorar a performance dele em uma área no qual ele não foi treinado).
+![[Pasted image 20240723090100.png]]

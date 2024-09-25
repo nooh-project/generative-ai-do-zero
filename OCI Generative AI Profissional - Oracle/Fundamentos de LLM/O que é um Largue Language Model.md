@@ -1,0 +1,2 @@
+- Um Language Model (LM) é um modelo probabilístico de texto.
+- Eles possuem um vocabulário, em que cada palavra possui um valor probabilístico, e o texto é elaborado a partir disso.
