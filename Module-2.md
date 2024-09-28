@@ -78,3 +78,51 @@
   2-*Least-to-Most*: ??? 
 
   3-*Step-back*: possui um grande desempenho em questões de quimíca. Os criadores descobriram que se antes da pergunta, colocar os conceitos e os princípios e equações necessárias para resolver o problema, o modelo consegue um bom resultado.
+
+
+  #### Issues with Prompting:
+  - Problema na formulação do prompting que gera comportamentos diferentes do esperado, existem vários tipos, vamos estudá-los:
+  <br>
+  1. Prompting Injection: Tentar, de forma maliciosa ou por meio de prompts mal formulados, para tentar fazer o modelo a não seguir suas instruções. Um exemplo seria tentar fazer o modelo ignorar instruções anteriores e apagar as tabelas do banco de dados. 
+
+  #### Training:
+
+  -O prompting não é o único recurso que afeta o output de um modelo, o treinamento sendo um fator talvez até de maior importância, pois esse vai ser delimitar a capacidade máxima dele, e os prompts sendo apenas uma forma de extrair o total dessa capacidade.
+
+  -Durante o treinamento, pode-se alterar os parâmetros do modelo, o que afetará diretamente as distribuições, que serão um reflexo dos parâmetros selecionados.
+
+  1-Fine-Tuning(FT): Em vez de ajustar o modelo no início do treino, esse método aproveita o conhecimento inicial obtido de uma grande extensão de dados, isso é depois adaptado a um dominío com uma quantidade menor de dados. O nome de ajuste fino se deve porque as parte mais gerais(grossas) do modelo são mantidas quase sem nenhuma alteração, enquanto as partes finas(especializações) são ajustadas. Esse treinamento é considerado caro, pois todos os parâmetros são ajustados para a nova tarefa.
+
+  2-Param. Efficient FT: Esse foca o treinamente em melhorar uma habilidade específica do modelo, o que diminui o número de parâmetros ajustados. Um pequeno conjunto de parâmetros é isolado para um novo treinamento, existe também a possibilidade de criar novos parâmetros. Em modelos enormes, como GPT e BERT, é muito utíl, pois ajustar todos os parâmetros demoraria e seria computacionalmente caro.
+
+  3-Soft prompting: Ajusta apenas os embeddings, que são vetores, esses que vão ser como direcionamentos para o modelo seguir, sem ser preciso modificar parâmetros internos, permanecendo inalterado. Em modelos muito grandes, novamente, como BERT ou GPT, é bem útil, visto que pode-se adaptar a novo domínios sem alterar a estrutura interna
+
+  4-Pre-Training: Semelhante ao FT, pois ajusta todos os parâmetros, tornando-o caro, no entanto, diferente dele, os dados não precisam de rótulos, pois aqui, não se direciona o modelo, apenas o alimenta com informações e pede para ele prever, de forma contínua, a próxima palavra.
+
+#### Decoding
+
+- Como já citado, cada palavra é gerada por vez, mas há estratégias diferentes para escolher essa próxima palavra.
+
+1.Greedy Decoding: Escolhemos a palavra com maior probabilidade.
+
+2.Non-Deterministic Decoding: Escolhe-se, aleatoriamente, uma palavra entre as escolhas.
+
+3.Temperature: Um hiperparâmetro que controla o grau de aleatoriedade e imprevisibilidade na escolha das palavras. Ele atua ajustando a suavidade da distribuição. Dessa forma, palavras menos prováveis, acabam tendo uma maior probabilidade, o que pode gerar em um vocabulário mais criativo e variado. É importante citar que não importa o quanto seja modulado, a ordem de probabilidade será a mesma.
+
+#### Hallucination
+-Texto gerado pelo modelo sem nenhum fundamento ou dado exposto ao modelo. Nem sempre são fáceis de se identificar, as vezes sendo modifcações sutis. É preciso ter cuidado com textos gerados por modelos, principalmente quando não se tem conhecimento do assunto gerado.
+
+#### Groundness
+- Fala o quão fundamentada está uma resposta gerada por um modelo, também verifica se o o modelo estpa utilizando dados reais ou informações que possam ser checadas. Alto groundness significa que o modelo está bem fundamento, já o inverso, significa que o modelo tem alta possibilidade de estar alucinando.
+
+#### Attributability
+- Refere-se a capacidade do modelo de apontar de onde está retirando suas informações.
+
+#### LLMs Applications
+-RAG: um sistema RAG é onde um usuário fornece um input, isso será transformado em uma pergunta, essa pergunta será utilizada no banco de dados para buscar algo, no caso de retornar, por exemplo, um documento. Caso o sistema encontre algo relevante, ele recupera o documento para gerar uma resposta.
+
+-Code Models: modelos treinados em código, comentários e documentação. Esses modelos são ótimos para ajudar na construção de códigos e conclusão da documentação, acelerando o desenvolvimento. Entretanto, tarefas mais complexas ainda são um desafio para esses modelos.Um dos exemplos mais famosos, é o GitHub Copilot.
+
+-Multi-Modal: treinados em várias modalidades de dados. Podem produzir vários tipos de mídia, desde texto até vídeos. Algo interessante, é que, diferente dos decodificadores, que geram uma palavra por vez, as imagens são geradas de uma só vez, não pixer por pixel. Isso é chamado de decodificação conjunta, já foi tentado fazer o mesmo em textos, mas o resultado ainda é abaixo de esperado.
+
+-Language Agents: Usados para tomadas de decisão, como suporte ao cliente, são capazes de interpretar a linguagem humana, são capazes de gerar insights.
