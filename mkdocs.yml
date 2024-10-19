@@ -1,7 +1,11 @@
 site_name: Curso de IA generativa
 nav:
   - Home: index.md
-  - modulo1: sobre_ia.md
+  - Modulo-1: sobre_ia.md
+  - Modulo-2: conceitos_de_prompt.md
+  - Modulo-3: sobre_prompt_engineering.md
+  - Modulo-4: tecnicas_e_abordagem_text_to_text.md
+  - Modulo-5: tecnicas_e_abordagem_text_to_image.md
 theme: 
   name: dracula
 
