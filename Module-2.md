@@ -1,13 +1,3 @@
-## IA generative foundations
-### Module 2: Large Language Models (LLMs)
-----
-#### O que aprenderemos:
--Nesse módulo, iremos aprender o básico sobre LLMs: o que eles fazem e como eles funcionam(tudo em nível técnico). 
--Técnicas de Prompt(solicitação) que são mais usadas para as LLMs gerarem textos com características específicas.
-- Treinamento e codificação para gerar textos LLMs
-- Perigos sobre implatação de tecnologias com LLMs
--Temas que ainda estão sendo desenvolvidos.
- ----
  #### Introdução as LLMs
  - O que exatamente são modelos LLMs? Talvez você já tenha se perguntado e não soubesse a resposta, mas iremos explicar exatamente o que são. "Language Models (LMs) são modelos probabilísticos de texto" é uma das definições, essa usada pela Oracle, mas o que exatamente significa isso? Digamos que eu tenha essa frase: "Eu pedi para minha mãe comprar uma camisa para mim,  ela disse que __", um modelo de lnguagem irá calcular a distribuição de possíveis vocabulários, ou seja, o LM conhece uma gama de palavras chamada vocabulário e escolherá a mais apropriada, mas sem usar palavras fora do seu vocabulário. O output do texto acima podendo ser: ("vai",70%);("talvez",20%);("não",10%). Claro que é apenas um exemplo, as porcentagens e as respostas dependem do treinamento e do vocabulário. 
 

@@ -11,5 +11,7 @@ Nosso primeiro projeto de um curso totalmente documentado sobre inteligência ar
     - Oracle Cloud Infrastructure 2024 Generative AI Professional Exam Number: 1Z0-1127-24
 
 ## O curso está divido nos seguintes módulos
-1- O que preciso entender sobre IAs generativas
-2- Usando engenharia de prompt para melhorar as respostas da IA 
+1- O que preciso entender sobre IAs generativas?
+2- O que são LLMs? Como funcionam?
+3- O que é engenharia de prompt? para que serve?
+4- 

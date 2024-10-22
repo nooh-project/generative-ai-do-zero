@@ -10,7 +10,7 @@ Os encoders focam em incorporar as relações e contextos dentro de um determina
 
 Os encoders possuem, historicamente, um menor numero de parâmetros, os que combinam encoders e decoders (encoder-decoder) possuem um valor mediano e os decoders são os maiores.
 
-Os encoders são menores, visto que já se percebeu que aumentar a quantidade de parâmetros dele não leva uma uma melhor performance do modelo, diferentemente dos decoders que quando são muito pequenos não são bons geradores de texto. Apesar de que, segundo o curso da Oracle, esse padrão está mudando e com algumas modificações é possível gerar bons decoders com modelos pequenos.
+Os encoders são menores que as outras possíveis combinações, pois se percebeu que aumentar a quantidade de parâmetros dele não leva uma uma melhor performance do modelo, diferentemente dos decoders que quando são muito pequenos não são bons geradores de texto. Apesar de que, segundo o curso da Oracle, esse padrão está mudando e com algumas modificações é possível gerar bons decoders com modelos pequenos.
 
 ## Decoders
 
