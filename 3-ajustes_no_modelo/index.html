@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Modulo-3 - Curso de IA generativa</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Curso de IA generativa</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../0-index/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../1-sobre_ia/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Modulo-1
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../2-o_que_sao_llm/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Modulo-2
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="./"
+                    class=" active 
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Modulo-3
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../2-o_que_sao_llm/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="ajustando-um-modelo">Ajustando um modelo</h1>
+<p>É comum que vez ou outra, o modelo não gere a resposta que desejamos. Isso pode ocorrer devido a um ou mais dos seguintes fatores:</p>
+<ul>
+<li>Soliticação mal formulada.</li>
+<li>Está fora do que domíno do modelo, ou seja, fora da área na qual ele foi treinado.</li>
+<li>Hallucination</li>
+</ul>
+<p>Existem algumas formas de lidar com essas situações:</p>
+<ul>
+<li>Prompt Engineering</li>
+<li>Training</li>
+<li>Groundedness and Attributability</li>
+</ul>
+<h2 id="mas-o-que-e-um-prompt">Mas, o que é um prompt?</h2>
+<p>Um prompt é todo o input fornecido a um modelo generativo que produz o resultado desejado. Esse input pode ser um texto de solicitação, uma série de perguntas entre outros. Ele consegue ter esse efeito pois é capaz de <strong>influenciar a probabilidade sobre o vocabulário do modelo</strong>.</p>
+<h2 id="como-elaborar-um-bom-prompt">Como elaborar um bom prompt:</h2>
+<p>Para elaborar um promp que o modelo consiga compreender bem, pode-se utilizar o seguinte modelo:</p>
+<ul>
+<li>Instructions</li>
+<li>Context</li>
+<li>Input data</li>
+<li>Output indicator </li>
+</ul>
+<p>Para os seguintes exemplos, elaborados pelo autor, foi utilizado o modelo do llama3.1 de 8 B de parâmetros da Meta, usando o projeto ollama.</p>
+<h3 id="instructions">Instructions</h3>
+<p>Criar instruções <strong>claras</strong> sobre a tarefa.</p>
+<p>Ex: Escreva um texto de 300 palavras sobre o efeito do aquecimento global na vida marinha.</p>
+<p>Saída:</p>
+<pre><code>O aquecimento global está tendo um impacto significativo na vida marinha. O aumento da temperatura das águas pode afetar a distribuição e o comportamento de muitas espécies marinhas, desde peixes até corais. A mudança nos padrões de temperatura também pode levar à perda de habitats e à alteração nos padrões de reprodução.
+
+Além disso, o aquecimento global está causando a acidificação do oceano, que é um dos principais desafios enfrentados pelas áreas marinhas. A absorção excessiva de CO2 pelo oceano está levando à formação de ácido cítrico e à dissolução dos carbonatos essenciais para a estrutura dos corais e de muitas outras espécies marinhas.
+
+A vida marinha também é afetada pelas mudanças nos padrões de circulação oceânica, que podem levar a uma redução na produtividade das áreas marinhas. A perda de nutrientes e oxigênio pode ter consequências graves para as populações marinhas.
+
+O aquecimento global também está aumentando a frequência e intensidade dos eventos climáticos extremos, como furacões e ondas ciclônicas, que podem causar danos significativos às áreas marinhas. A perda de habitats e a alteração nos padrões de reprodução podem ter consequências indiretas para a humanidade, pois o oceano é uma fonte importante de alimento e recursos naturais.
+
+É fundamental que sejam tomadas medidas imediatas para combater os impactos do aquecimento global na vida marinha. A transição energética para fontes renováveis, como energia solar e eólica, e a implementação de políticas climáticas eficazes são essenciais para reduzir as emissões de gases de efeito estufa e proteger os ecossistemas marinhos.
+
+A vida marinha é um recurso vital para a humanidade, e sua proteção é essencial para garantir o bem-estar do planeta. É hora de agir para preservar os ecossistemas marinhos e evitar as consequências graves que podem surgir se nada for feito nada.&quot;
+</code></pre>
+<h3 id="context">Context:</h3>
+<p>Informar um contexto, para que o modelo consiga gerar a resposta alinhada com o contexto.</p>
+<p>Ex: Recentemente, o aquecimento global passou por mudanças significativas, levando ao aumento do nível do mar, tempestades mais intensas, e mudanças nos padrões climáticos. Essas mudanças levaram a impactos sérios na vida marinha. Escreva um texto de 300 palavras sobre o efeito do aquecimento global na vida marinha.</p>
+<p>Saída:</p>
+<pre><code>O aquecimento global está tendo um impacto devastador na vida marinha. As mudanças climáticas recentes têm levado a um aumento significativo no nível do mar, causando inundação de habitats marinhos e perda de biodiversidade. Além disso, as tempestades mais intensas estão afetando as áreas costeiras, causando danos à vida marinha e às infraestruturas humanas.
+
+As mudanças nos padrões climáticos também estão afetando a distribuição e o comportamento das espécies marinhas. Muitas espécies que dependem de condições climáticas específicas para sobreviver estão sendo deslocadas ou extintas. Isso tem consequências graves para as cadeias alimentares marinhas, pois muitos peixes e outras espécies dependem das espécies que são afetadas.
+
+A acidificação do oceano é outro efeito devastador do aquecimento global na vida marinha. A absorção excessiva de CO2 pelo oceano está levando à formação de ácido cítrico, que dissolvia os carbonatos essenciais para a estrutura dos corais e de muitas outras espécies marinhas.
+
+As consequências dessas mudanças são graves e afetam não apenas as áreas marinhas, mas também a humanidade. A perda de biodiversidade marinha pode ter implicações econômicas e sociais significativas, pois o oceano é uma fonte importante de alimento e recursos naturais.
+
+É fundamental que sejam tomadas medidas imediatas para combater os impactos do aquecimento global na vida marinha. A transição energética para fontes renováveis, como energia solar e eólica, e a implementação de políticas climáticas eficazes são essenciais para reduzir as emissões de gases de efeito estufa e proteger os ecossistemas marinhos. A vida marinha é um recurso vital para a humanidade, e sua proteção é essencial para garantir o bem-estar do planeta.
+</code></pre>
+<h3 id="input-data">Input data:</h3>
+<p>Qualquer tipo de informação provida como parte do prompt.</p>
+<p>Ex: Lhe foi fornecido um conjunto de dados das medidas de temperatura no nível do mar do Oceano Pacífico. Escreva um texto de 300 palavras analizando o efeito do aquecimento global na vida marinha do oceano pacífico.</p>
+<p>Saída:</p>
+<pre><code>O conjunto de dados fornecido revela uma tendência clara de aumento nas medidas de temperatura no nível do mar do Oceano Pacífico ao longo dos últimos anos. Essa elevação na temperatura é um sinal inequívoco do aquecimento global e seus impactos devastadores sobre a vida marinha.
+
+Analisando os dados, observamos que as temperaturas mais altas estão ocorrendo em áreas de baixas profundidades, onde as espécies marinhas são mais vulneráveis às mudanças climáticas. Isso sugere que essas espécies estão sendo afetadas diretamente pelo aumento da temperatura e pelas consequências associadas, como a acidificação do oceano.
+
+A distribuição das temperaturas também revela padrões interessantes. Áreas com correntes marinhas mais intensas estão apresentando variações mais significativas em relação às médias históricas. Isso pode ser atribuído à alteração nos padrões de circulação oceânica, que está afetando a distribuição de nutrientes e oxigênio essenciais para as espécies marinhas.
+
+Aumentos nas temperaturas também estão associados a mudanças nos padrões de reprodução e distribuição de espécies. Peixes e outros organismos estão sendo deslocados ou extintos em áreas onde as condições climáticas não atendem às suas necessidades. Isso tem implicações graves para as cadeias alimentares marinhas e para a saúde dos ecossistemas marinhos.
+
+Os dados fornecidos também sugerem que o aumento da temperatura está afetando a produtividade das áreas marinhas. A redução na abundância de nutrientes e oxigênio está comprometendo a capacidade dessas áreas de sustentar vida marinha.
+
+Em resumo, os dados sobre as medidas de temperatura no nível do mar do Oceano Pacífico revelam um quadro sombrio para a vida marinha. As consequências do aquecimento global estão sendo sentidas em todo o ecossistema, e é fundamental que sejam tomadas medidas imediatas para proteger esses recursos vitais para a humanidade.
+</code></pre>
+<h3 id="output-indicator">Output Indicator:</h3>
+<p>Oferecer métricas para avaliar as características do prompt.</p>
+<p>Ex: O texto gerado deve ser de 300 palavras. Vai ser avaliado com base na clareza da análise e incorporação de dados relevantes ou estudos de caso.</p>
+<p>Saída:</p>
+<pre><code>O conjunto de dados fornecido sobre as medidas de temperatura no nível do mar do Oceano Pacífico revela uma tendência clara de aumento nas temperaturas ao longo dos últimos anos. Esse aumento é um sinal inequívoco do aquecimento global e seus impactos devastadores sobre a vida marinha.
+
+Analisando os dados, observamos que as temperaturas mais altas estão ocorrendo em áreas de baixas profundidades, onde as espécies marinhas são mais vulneráveis às mudanças climáticas. Isso sugere que essas espécies estão sendo afetadas diretamente pelo aumento da temperatura e pelas consequências associadas, como a acidificação do oceano.
+
+A distribuição das temperaturas também revela padrões interessantes. Áreas com correntes marinhas mais intensas estão apresentando variações mais significativas em relação às médias históricas. Isso pode ser atribuído à alteração nos padrões de circulação oceânica, que está afetando a distribuição de nutrientes e oxigênio essenciais para as espécies marinhas.
+
+Aumentos nas temperaturas também estão associados a mudanças nos padrões de reprodução e distribuição de espécies. Peixes e outros organismos estão sendo deslocados ou extintos em áreas onde as condições climáticas não atendem às suas necessidades. Isso tem implicações graves para as cadeias alimentares marinhas e para a saúde dos ecossistemas marinhos.
+
+É importante notar que essas mudanças são consistentes com estudos de caso recentes, como o da costa oeste dos Estados Unidos, onde um aumento na temperatura de 1°C foi associado a uma redução de 30% nas populações de peixes e invertebrados marinhos. Além disso, as regiões mais quentes do Oceano Pacífico estão apresentando mudanças significativas em suas comunidades marinhas, o que pode ter consequências graves para a biodiversidade e a saúde dos ecossistemas.
+
+Em resumo, os dados fornecidos sobre as medidas de temperatura no nível do mar do Oceano Pacífico revelam um quadro sombrio para a vida marinha. As consequências do aquecimento global estão sendo sentidas em todo o ecossistema e é fundamental que sejam tomadas medidas imediatas para proteger esses recursos vitais para a humanidade.
+</code></pre>
+<h2 id="prompt-engineering">Prompt Engineering</h2>
+<p><strong>Prompt Engineering</strong> é o nome dado ao processo de se fazer um prompt eficiente. Para fazer isso bem, é necessário: Análise Crítica, Criatividade e Expertise técnica.</p>
+<p>Além disso, é um processo iterativo, ou seja, <em>pode ser necessário repetir o processo</em> para se obter o resultado desejado.</p>
+<h2 id="para-que-fazer-isso">Para que fazer isso?</h2>
+<ul>
+<li>Otimizar a eficiência do modelo;</li>
+<li>Melhorar a performance do modelo para tarefas específicas;</li>
+<li>Entender as limitações do modelo;</li>
+<li>Melhorar a segurança ao se utilizar o modelo.</li>
+</ul>
+<p>Existe um concenso sobre algumas boas práticas para criação de um bom prompt:</p>
+<h3 id="clareza">Clareza</h3>
+<ul>
+<li>Usar linguagem clara e concisa;</li>
+<li>Evitar jargões e termos complexos;</li>
+<li>Dar instruções explícitas.</li>
+</ul>
+<h3 id="contexto">Contexto:</h3>
+<ul>
+<li>Forneça um contexto;</li>
+<li>Inclua informações relevantes.</li>
+</ul>
+<h3 id="precisao">Precisão:</h3>
+<ul>
+<li>Seja específico;</li>
+<li>Use exemplos.</li>
+</ul>
+<h3 id="role-play">Role-play:</h3>
+<ul>
+<li>Forneça um contexto para um role-play, e assuma um papel como Desenvolvedor, Empresário, Estudante de Direito e etc.</li>
+</ul>
+<h2 id="trainingtreinamento">Training/treinamento:</h2>
+<p>O treinamento é outro modo de se influenciar nas probabilidades do vocabulário de um modelo. Ele costuma ser usado quando: existem dados para treinamento e a adaptação de domínio é necessária (adaptar um modelo, costumeiramente via treinamento, para melhorar a performance dele em uma área na qual ele não foi treinado).</p>
+<h2 id="groundedness-attributability-e-hallucinations">Groundedness, Attributability e Hallucinations</h2>
+<p>Hallucination é o nome dado ao texto gerado por LLMs que não são factuais ou não suportados pelos dados usados no treinamento do modelo. <strong>Não existe uma maneira de eliminar definitivamente esse problema, mas apenas reduzir sua ocorrência</strong>.</p>
+<h2 id="groundedness-and-attributability">Groundedness and Attributability</h2>
+<p>São formas de evitar as “hallucinations”, fazendo com que o modelo aprenda a citar e se basear nas fontes do texto que ele gerou.</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/mkdocs.js"></script>
+			<script src="../search/main.js" defer></script>
+
+</body>
+
+</html>

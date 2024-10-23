@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Modulo-2 - Curso de IA generativa</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Curso de IA generativa</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../0-index/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../1-sobre_ia/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Modulo-1
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="./"
+                    class=" active 
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Modulo-2
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../3-ajustes_no_modelo/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Modulo-3
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../1-sobre_ia/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../3-ajustes_no_modelo/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="o-que-e-um-large-language-modelllm">O que é um large language model(LLM)?</h1>
+<p>"Language Models (LMs) são modelos probabilísticos de texto", uma definição desse termos, <strong>mas o que isso significa</strong>? Vamos a um exemplo para esclarecer isto:</p>
+<p>Digamos que eu tenha essa frase: 
+- "Eu pedi para minha mãe comprar uma camisa para mim,  ela disse que __" </p>
+<p>Com base nos dados que recebeu para treinamento (a forma como o modelo "aprende"), ele irá verificar quais palavras de seu repertório costumam ser mais comuns ao se ter sentenças parecidas com a que usamos de exemplo. 
+Isso significa dizer que o output do texto acima poderia ser: ("vai",70%);("talvez",20%);("não",10%). Claro que dentro do nosso exemplo a portecagem de cada palavra foi definina arbitrariamente por razões didática. Nesse sentido, as porcentagens e as respostas dependem do treinamento e do vocabulário e variam tanto pelo recbimento de novos dados quanto por novos treinamentos realizados.</p>
+<h2 id="e-o-que-isso-tem-haver-com-os-llms">e o que isso tem haver com os LLMs?</h2>
+<p>A diferença entre um modelo LM e um modelo LLM está relacionada a <strong>quantidade de parâmetros que foram utilizadas no treinamento do modelo</strong>, apesar de que não existe um consenso sobre qual o valor quantitavo que torna um modelo um LLM. Portanto, entende-se que a diferença se resume da seguinte forma: um LM recebeu uma quantidade x de parâmetros, enquanto que um LLM recebeu um valor de 5000 maior que x.</p>
+<p>Aos que se perguntarem sobre <em>é possível influenciar os valores probabilísticos das palavras depois que o modelo é treinado?</em>, saiba que sim, porém isso é um assunto que será visto em outros módulos.</p>
+<p>Por enquanto, vamos focar em entender mais como LLMs funcionam. Primeiro, conhecamos os Tokens e os embeddings:</p>
+<h3 id="embedding">Embedding</h3>
+<ul>
+<li>Embeddings são representações numéricas de um trecho de texto, convertido em uma sequência de números. Tal texto pode ser uma palavra, frase, sentença, parágrafo ou mais de um parágrafo. Isso facilita para o computador entender as relações entres os trechos de texto.</li>
+<li>Embeddings de palavras também são capazes de capturar propriedades delas, e com os métodos certos computar a similaridade numérica dessas palavras. Embeddings que são numericamente similares também o são semanticamente.</li>
+<li>Quando se faz embeddings de sentenças, cada uma é associada com um vetor de números, de forma que sentenças similares possuem vetores similares, e sentenças diferentes tem vetores diferentes.</li>
+</ul>
+<h3 id="tokens">Tokens</h3>
+<p>LLMs não tem como base caracteres, mas sim tokens. Um token pode ser parte de uma palavra, uma palavra inteira ou um sinal de pontuação.</p>
+<ul>
+<li>Exemplo de token: Apple</li>
+<li>Exemplo de palavra composta de tokens: friendship (”friend” e “ship”)</li>
+</ul>
+<p>O número de tokens por palavra depende da complexidade do texto:</p>
+<ul>
+<li>Texto simples: média de 1 token/palavra;</li>
+<li>Texto complexo (costuma ter palavras menos comuns): média de 2-3 tokens/palavra.</li>
+</ul>
+<h4 id="parametros-de-escolha-de-tokens">Parâmetros de escolha de tokens:</h4>
+<ul>
+<li>Maximum Output Tokens: valor máximo de tokens gerado no output do modelo.</li>
+<li>Temperature (já apresentado em outra anotação, [[Prompting and Prompting Engineering]] )</li>
+<li>Top k, Top p</li>
+<li>Stop Sequences</li>
+<li>Presence/Frequency Penalty</li>
+<li>Show Likelihoods</li>
+</ul>
+<h5 id="top-k">Top k</h5>
+<p>Parâmetro que faz com que o modelo escolha o próximo token da lista de “k” tokens com maiores probabilidades.</p>
+<h5 id="top-p">Top p</h5>
+<p>Parâmetro que escolha os tokens cuja soma das probabilidades seja menor ou igual ao valor de p.</p>
+<h5 id="stop-sequences">Stop Sequences</h5>
+<p>Uma string que sinaliza para o modelo quando ele deve parar de gerar o output. É uma forma de controlar a saída do modelo. Essa string encerra a saída, mesmo que não tenha atingido o limite de tokens de saída.</p>
+<h5 id="presencefrequency-penalty">Presence/Frequency Penalty</h5>
+<p>Um parâmetro que serve para tornar o output do modelo menos repetitivo. Qualquer token que tenha aparecido um determinado número de vezes, seja na saída do modelo ou no prompt, recebe uma penalidade na sua probabilidade de ser escolhido.</p>
+<h5 id="show-likelihoods">Show Likelihoods</h5>
+<p>Toda vez que um token é gerado, um valor entre -15 e 0 é atribuído a todos os outros tokens. Tokens com maior valor tendem a ser gerados a partir do token atual.</p>
+<h1 id="arquiteturas-de-llm">Arquiteturas de LLM</h1>
+<h2 id="tipos-de-arquitetura">Tipos de Arquitetura</h2>
+<p>Neste material vamos nos concetrar em duas principais arquiteturas: encoders e decoders.</p>
+<h3 id="encoders">Encoders</h3>
+<p>Os encoders focam em incorporar as relações e contextos dentro de um determinado texto, transformando o texto (sequência de palavras) em um vetor.</p>
+<p>Os encoders possuem, historicamente, um menor numero de parâmetros, os que combinam encoders e decoders (encoder-decoder) possuem um valor mediano e os decoders são os maiores.</p>
+<p>Os encoders são menores que as outras possíveis combinações, pois se percebeu que aumentar a quantidade de parâmetros dele não leva uma uma melhor performance do modelo, diferentemente dos decoders que quando são muito pequenos não são bons geradores de texto. Apesar de que, segundo o curso da Oracle sobre IA generativa, esse padrão está mudando e com algumas modificações é possível gerar bons decoders com modelos pequenos.</p>
+<p>Essa arquitetura é mais recomendada para classificação e análise de textos.</p>
+<h3 id="decoders">Decoders</h3>
+<p>Modelos que recebem como input uma sequência de palavras e tem como saída, tendo como referência a probabilidade das palavras em seu vocabulário, uma nova palavra. Um decoder emite apenas um token (palavra) por vez, para gerar um sequência de tokens (um texto) é necessário retroalimentar o decoder com o output anterior, para que assim ele vá gerando um texto com os tokens mais prováveis.</p>
+<p>De forma simples, é possível afirmar que os decoders visam gerar texts. Eles pegam uma representação de texto, que pode ter vindo do codificador ou de outro contexto, e com isso, geram uma sequência de palavras.</p>
+<p>Tanto os encoders quanto os decoders são construídos em um bloco de construção chamado transformador, que foi popularizado no artigo "Attention is All You Need", de 2017. </p>
+<h3 id="enconder-decoder">Enconder-Decoder</h3>
+<p>Basicamente a combinação de um encoder onde o output dele é o input de um decoder. Costumam ser usados para tarefas sequenciais, como tradução.</p>
+<h1 id="conteudos-extras">Conteúdos extras:</h1>
+<p>Existem algumas formas de decoding:</p>
+<ul>
+<li>Greedy Decoding: Escolher a palavra com maior probabilidade a cada passo;</li>
+<li>Non-Deterministic Decoding: Escolher randomicamente as palavras com maiores probabilidades em cada passo.</li>
+<li>Temperature: Um (hiper) parâmetro que modula a distribuição das probabilidades do vocabulário do modelo. Quando a temperatura diminui, a distribuição de probabilidades se concentram nas palavras que normalmente já são mais prováveis, contudo se ela aumenta as palavras ficam com probabilidades com valores mais próximos umas das outras. Observação: Esse parâmetro afeta as probabilidade já existentes, logo palavras mais prováveis de serem escolhidas tendem a ainda se comportarem dessa forma, assim como com as palavras menos prováveis.</li>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/mkdocs.js"></script>
+			<script src="../search/main.js" defer></script>
+
+</body>
+
+</html>
