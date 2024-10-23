@@ -2,7 +2,7 @@ site_name: Curso de IA generativa
 nav:
   - Home: 0-index.md
   - Modulo-1: 1-sobre_ia.md
-  - Modulo-2: 2-o_sao_llm.md
+  - Modulo-2: 2-o_que_sao_llm.md
   - Modulo-3: 3-ajustes_no_modelo.md
 theme: 
   name: dracula
