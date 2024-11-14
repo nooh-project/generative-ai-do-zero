@@ -14,4 +14,5 @@ Nosso primeiro projeto de um curso totalmente documentado sobre inteligência ar
 1- O que preciso entender sobre IAs generativas?
 2- O que são LLMs? Como funcionam?
 3- O que é engenharia de prompt? para que serve?
-4- 
+4- Melhorando a engenharia de prompt
+5 - RAG, o que é e para que serve

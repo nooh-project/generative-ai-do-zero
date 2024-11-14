@@ -4,6 +4,8 @@ nav:
   - Modulo-1: sobre_ia.md
   - Modulo-2: o_que_sao_llm.md
   - Modulo-3: ajustes_no_modelo.md
+  - Modulo-4: melhorando_prompt_engineering.md
+  - Modulo-5: rag.md
 theme: 
   name: dracula
 
