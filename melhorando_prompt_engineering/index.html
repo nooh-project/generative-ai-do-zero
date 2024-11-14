@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Curso de IA generativa</title>
+        <title>Modulo-4 - Curso de IA generativa</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,14 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="./assets/css/darcula-highlight.min.css">
+            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
 
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/dracula-ui.min.css">
-        <link rel="stylesheet" href="./assets/css/mkdocs.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -66,42 +66,42 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="./."
+                <a href=".."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Home
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./sobre_ia/"
+                <a href="../sobre_ia/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Modulo-1
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./o_que_sao_llm/"
+                <a href="../o_que_sao_llm/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Modulo-2
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./ajustes_no_modelo/"
+                <a href="../ajustes_no_modelo/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Modulo-3
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./melhorando_prompt_engineering/"
-                    class="
+                <a href="./"
+                    class=" active 
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Modulo-4
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./rag/"
+                <a href="../rag/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Modulo-5
@@ -132,12 +132,28 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../ajustes_no_modelo/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../rag/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -160,25 +176,25 @@
             <!-- endblock -->
 
             <!-- block content -->
-	<section class="p-md-5 content-search">
-		<article>
-			<p></p>
-			<h1 id="search">Search Results</h1>
-			<hr>
-
-			<form id="content_search" action="search.html">
-				<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-				<input name="q" id="mkdocs-search-query" type="text" class="drac-input drac-input-purple drac-text-white search_input search-query ui-autocomplete-input"
-					placeholder="Search the Docs" autocomplete="off" autofocus title="Type search term here">
-			</form>
-			
-			<div id="mkdocs-search-results" class="search-results" data-no-results-text="No results found">
-				Searching...
-			</div>
-
-		</article>
-	</section>
-
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="melhorando-as-saidas-do-modelo-com-prompt-engineering">Melhorando as saídas do modelo com Prompt Engineering</h1>
+<p>No último módulo, vimos como fazer certos ajustes em um modelo LLM. Um deles foi o uso de prompt para "guiar" o modelo a elaborar a resposta de que precisamos. Contudo, é possível melhorar ainda mais essa forma orientação mais eficiente.</p>
+<h2 id="prompt-engineering">Prompt Engineering</h2>
+<p>É basicamente o processo de formular os prompts, para aprimorar as respostas dos LLMs. No entanto, não é algo intuitivo nem garante melhoria nas respostas dos modelos. Contudo pode ser eficiente se fizer uso de algumas estratégias específicas.</p>
+<p>Essas são algumas das estratégias que ajudam elaborar um promp de maior qualidade.</p>
+<ul>
+<li><strong>In-context learning</strong>: Demonstrar ou instruir o modelo sobre como a resposta deve ser gerada.</li>
+<li><strong>k-shot prompting</strong>: mostrar exemplos específicos da tarefa que o modelo deverá realizar.</li>
+<li><strong>Chain-of-Thought</strong>: fazer um prompt que leve o modelo a dividir a resolução do problema em etapas.</li>
+<li><strong>Least-to-most</strong>: criar um prompt para o modelo que decomponha o problema em problemas menores, começando pelo caso mais simples.</li>
+<li><strong>Step-Back</strong>: gerar um prompt que o modelo identifique os conceitos de alto nível que são necessários para resolver a tarefa.</li>
+</ul>
+<h2 id="problemas-relacionados-ao-prompting">Problemas relacionados ao Prompting</h2>
+<p>Prompting injection (jailbreaking): gerar um prompt para o modelo, que leve ele a ignorar as instruções que recebeu do desenvolvedor, causar algum tipo de dano, ou se comportar de maneiras inesperadas. </p>
+<p>Apesar do problema existir, ainda não existe um consenso sobre uma maneira efetiva de lidar com este problema.</p></p>
+    </article>
+</section>
             <!-- endblock -->
 
             <!-- block footer -->
@@ -195,11 +211,11 @@
 
     </main>
 
-        <script>var base_url = '.';</script>
-        <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/mkdocs.js"></script>
-			<script src="./search/main.js" defer></script>
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/mkdocs.js"></script>
+			<script src="../search/main.js" defer></script>
 
 </body>
 
